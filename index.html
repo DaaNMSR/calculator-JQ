@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator JQuery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="calc">
+        <form name="form">
+            <input class="calc-display">
+        </form>
+        <table>
+            <tr>
+                <td>
+                    <input class="operator" type="button" value="C" onclick="clearDisplay()">
+                </td>
+                <td>
+                    <input class="operator" type="button" value="/" onclick="insrt('/')">
+                </td>
+                <td>
+                    <input class="operator" type="button" value="<" onclick="del()">
+                </td>
+                <td>
+                    <input class="operator" type="button" value="*" onclick="insrt('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" onclick="insrt(7)">
+                </td>
+                <td>
+                    <input type="button" value="8" onclick="insrt(8)">
+                </td>
+                <td>
+                    <input type="button" value="9" onclick="insrt(9)">
+                </td>
+                <td>
+                    <input class="operator" type="button" value="-" onclick="insrt('-')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onclick="insrt(4)">
+                </td>
+                <td>
+                    <input type="button" value="5" onclick="insrt(5)">
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="insrt(6)">
+                </td>
+                <td>
+                    <input class="operator" type="button" value="+" onclick="insrt('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="insrt(1)">
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="insrt(2)">
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="insrt(3)">
+                </td>
+                <td>
+                    <input class="operatorRes" type="button" value="=" onclick="eql()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="0" onclick="insrt(0)">
+                </td>
+                <td>
+                    <input class="operator" type="button" value="." onclick="insrt('.')">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
